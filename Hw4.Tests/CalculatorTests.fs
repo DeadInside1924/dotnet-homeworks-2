@@ -9,6 +9,7 @@ open Xunit
 [<InlineData(15, 5, CalculatorOperation.Minus, 10)>]
 [<InlineData(15, 5, CalculatorOperation.Multiply, 75)>]
 [<InlineData(15, 5, CalculatorOperation.Divide, 3)>]
+
 let ``+, -, *, / work return correct calculation results`` (value1, value2, operation, expectedValue) =
     // act
     let actual = calculate value1 operation value2
