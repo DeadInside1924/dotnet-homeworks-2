@@ -48,3 +48,8 @@ let ``Incorrect argument count throws ArgumentException``() =
     
     // act/assert
     Assert.Throws<ArgumentException>(fun () -> parseCalcArguments args |> ignore)
+
+[<Fact>]
+let ``null arguments throws ArgumentException``() =
+    // act/assert
+    Assert.Throws<ArgumentException>(fun () -> parseCalcArguments null |> ignore)
