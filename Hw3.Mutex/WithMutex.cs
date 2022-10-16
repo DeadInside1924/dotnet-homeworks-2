@@ -27,7 +27,6 @@ public class WithMutex: IDisposable
         return _index;
     }
     
-    // https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose
     public void Dispose()
     {
         // Dispose of unmanaged resources.
