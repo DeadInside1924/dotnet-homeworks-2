@@ -1,8 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 using Hw7.ErrorMessages;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Hw7.Models.ForTests;
 
+[ExcludeFromCodeCoverage]
 public class TestModel : BaseModel
 {
     //without [Display(Name = "Имя")]
