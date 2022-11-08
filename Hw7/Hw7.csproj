@@ -10,4 +10,9 @@
         <_ContentIncludedByDefault Remove="Views\Test\TestModel.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+      <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+    </ItemGroup>
+
 </Project>
