@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Giraffe" Version="6.0.0" />
         <PackageReference Include="HtmlAgilityPack" Version="1.11.43" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.6" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
