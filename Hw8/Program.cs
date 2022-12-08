@@ -13,15 +13,15 @@ public class Program
         builder.Services.AddControllersWithViews();
         builder.Services.AddMiniProfiler();
         builder.Services.AddScoped<ICalculator, Calculator.Calculator>();
-        
-        var app = builder.Build();
 
+        var app = builder.Build();
+        
         if (!app.Environment.IsDevelopment())
         {
             app.UseExceptionHandler("/Home/Error");
             app.UseHsts();
         }
-
+        
         app.UseHttpsRedirection();
         app.UseStaticFiles();
 
@@ -32,7 +32,7 @@ public class Program
         app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Calculator}/{action=Index}");
-
+        
         app.Run();
     }
 }
