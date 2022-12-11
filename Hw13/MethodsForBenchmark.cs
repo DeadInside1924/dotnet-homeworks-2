@@ -12,3 +12,8 @@ public class MethodsForBenchmark
     public string Dynamic(dynamic s) => s.ToString() + s;
     public string Reflection(string s) => s + s;
 }
+
+public class BenchmarkMethodsExtensions : MethodsForBenchmark
+{
+    public override string Virtual(string s) => s + s;
+}
