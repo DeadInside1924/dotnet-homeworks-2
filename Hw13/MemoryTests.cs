@@ -20,9 +20,9 @@ public class MemoryTests
     [GlobalSetup]
     public void Setup()
     {
-        _benchmarkMethod = new MethodsForBenchmark();
+        _benchmarkMethod = new BenchmarkMethodsExtensions();
         _testString = "string";
-        _reflectionMethod = typeof(MemoryTests).GetMethod("Reflection");			
+        _reflectionMethod = typeof(BenchmarkMethodsExtensions).GetMethod(nameof(BenchmarkMethodsExtensions.Reflection));			
     }
 
     [Benchmark(Description = "Simple")]
